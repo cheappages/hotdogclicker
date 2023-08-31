@@ -12,6 +12,9 @@
       const click = () => {
         clicks += 1;
         document.getElementById("clicks").textContent = clicks;
+        if (clicks > 10000) {
+          window.location.replace("https://google.com.au");
+        }
       };
 
       const buy1 = () => {
