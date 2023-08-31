@@ -5,14 +5,15 @@
   </head>
   <body>
     <b id="clicks">Click da hotdog</b>
-    <button id="hotdog" onclick="click(); event.preventDefault(); return false;">Hotdog</button>
+    <button id="hotdog">[Hotdog]</button>
     <script>
       let clicks = 0;
       const click = () => {
         clicks += 1;
-        console.log(clicks)
-        document.getElementById("clicks").innerHTML = clicks;
+        document.getElementById("clicks").textContent = clicks;
       };
+
+      document.getElementById("hotdog").addEventListener("click", click);
     </script>
   </body>
 </html>
