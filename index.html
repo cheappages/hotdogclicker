@@ -5,12 +5,13 @@
   </head>
   <body>
     <b id="clicks">Click da hotdog</b>
-    <button id="hotdog" onclick="click(); event.preventDefault(); return false;">[Hotdog]</button>
+    <button id="hotdog" onclick="click(); event.preventDefault(); return false;">Hotdog</button>
     <script>
       let clicks = 0;
       const click = () => {
         clicks += 1;
-        document.getElementById("clicks").textContent = clicks;
+        console.log(clicks)
+        document.getElementById("clicks").innerHTML = clicks;
       };
     </script>
   </body>
