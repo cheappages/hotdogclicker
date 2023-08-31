@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hotdog Clicker</title>
+  </head>
+  <body>
+    <b id="clicks">Click da hotdog</b>
+    <button id="hotdog" onclick="click(); return false; event.preventDefault()">[Hotdog]</button>
+    <script>
+    	let clicks = 0
+    	const click = () => {
+      	clicks += 1;
+        document.getElementById("clicks").textContent = clicks;
+      }
+    </script>
+  </body>
+</html>
